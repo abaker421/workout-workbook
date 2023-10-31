@@ -5,8 +5,8 @@ router.get('/', (req,res) => {
     res.json({mssg: 'GET all workouts'})
 })
 
-router.get('./:id', (req,res) => {
-    res.json({mssg: `GET a single workout with id ${req.params.id}`})
+router.get('/:id', (req,res) => {
+    res.json({mssg: `GET a single workout`})
 })
 
 router.post('/', (req,res) => {
@@ -17,7 +17,7 @@ router.delete('/:id', (req,res) => {
     res.json({mssg: 'DELETE a workout'})
 })
 
-router.put('/:id', (req,res) => {
+router.patch('/:id', (req,res) => {
     res.json({mssg: 'UPDATE a workout'})
 })
 
